@@ -1,0 +1,152 @@
+*{
+padding: 0;
+margin: 0;
+}
+html, body {
+    min-height: 100%;
+  }
+/* ini merupakan sidebar dan content yang */
+
+.body{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+  
+}
+aside, main{
+    flex: 1;
+}
+
+main{
+    flex: 4;
+    background-color: rgba(0, 81, 81);
+}
+
+/* ini merupakan content Home atau beranda */
+
+
+
+
+/* bagian head */
+.head{
+    display: flex;
+}
+.head .image img{
+    width: 70px;
+}
+.kiri{
+ 
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.search form input{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+}
+
+.search form button{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 0px 20px 20px 0px;
+    border-left: none  ;
+    opacity: 3px;
+    background-color: white;
+    margin-left: -4px;
+}
+.search form button:hover{
+    background-color: #6dffff;
+    transition: 2s;
+}
+
+
+.kanan{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+.kanan div i,a{
+    color: black;
+    font-size: 20px;
+}
+.kanan div i:hover{
+color: #008989;
+transition: 0.5s;
+}
+.logout{
+    background-color: rgb(117, 228, 253);
+    width: 35PX;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+    padding: 5PX;
+    align-items: center;
+}
+.logout:hover{
+    background-color: azure;
+    transition: 0.5s;
+    color: rgb(255, 246, 246);
+}
+
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #BEF8F5;
+
+}
+aside{
+
+    background-color: rgb(0, 81, 81);
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    background-color: beige;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.footer_top .fotten, .fotkan{
+    margin-top: 20px;
+}
+.footer_top .fotkir{
+    text-align: center;
+}
+
+.fotter_bottom{
+    border-top: 1px solid rgba(135, 124, 124, 0.574);
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 85%;
+}
+.fotright{
+    display: flex;
+}
+.fotright p{
+    padding-left:20px ;
+    width: 30px;
+}
+.fotright p i, iconify-icon{
+  font-size: 20px;
+}

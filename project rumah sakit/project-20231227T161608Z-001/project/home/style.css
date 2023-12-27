@@ -1,0 +1,810 @@
+*{
+padding: 0;
+margin: 0;
+}
+html, body {
+    min-height: 100%;
+  }
+/* ini merupakan sidebar dan content yang */
+
+.body{
+    display: flex;
+    flex: 1;
+
+  
+}
+aside, main{
+    flex: 1;
+}
+
+main{
+    flex: 4;
+    background-color: rgba(0, 81, 81);
+}
+
+/* ini merupakan content Home atau beranda */
+.ubah1{
+    display: block;
+}
+.hasil {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-results {
+    display: flex;
+    width:80%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+
+  .search-results h2 {
+    margin-top: 0;
+  }
+
+  .search-results p {
+    margin-bottom: 10px;
+  }
+  .search-results table{
+      width:70%;
+  }
+  .search-results table td{
+      padding:5px;
+  }
+  
+
+.diagrams1, .diagrams2, .diagrams3, .diagrams4{
+  margin: 20px;
+  background-color: #489ffd;
+  width: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0.5px black;
+
+}
+.diagrams1 .kihead p{
+  padding-bottom: 5px;
+  
+}
+.diagrams1 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+.diagrams1 .kahead{
+  background-color: #90FFA2;
+  padding: 4px;
+  border-radius: 5px;
+  border: 0.5px solid black; 
+}
+.diagrams2 .kihead p{
+  padding-bottom: 5px;
+}
+.diagrams2 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+.diagrams2 .kihead h3 svg {
+  padding-right: 10px;
+}
+.diagrams2 .kahead{
+  background-color: #FFA4A4;
+  padding: 4px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+
+.diagrams3 .kihead p{
+  padding-bottom: 5px;
+}
+.diagrams3 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+.diagrams3 .kihead h3 svg {
+  padding-right: 10px;
+}
+
+.diagrams4 .kihead p{
+  padding-bottom: 5px;
+  
+}
+.diagrams4 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+
+.diagrams1 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams1 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 80%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams2 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams2 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 40%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams3 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams3 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 60%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams4 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams4 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 50%;
+  border-radius: 10px;
+  height: 35px;
+}
+
+
+/* pencarian */
+
+
+  
+.contenthome{
+  background-color: white;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+}
+.diagrams1, .diagrams2, .diagrams3, .diagrams4{
+  margin: 20px;
+  background-color: #489ffd;
+  width: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0.5px black;
+
+}
+.diagrams1 .kihead p{
+  padding-bottom: 5px;
+  
+}
+.diagrams1 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+.diagrams1 .kahead{
+  background-color: #90FFA2;
+  padding: 4px;
+  border-radius: 5px;
+  border: 0.5px solid black; 
+}
+.diagrams2 .kihead p{
+  padding-bottom: 5px;
+}
+.diagrams2 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+.diagrams2 .kihead h3 svg {
+  padding-right: 10px;
+}
+.diagrams2 .kahead{
+  background-color: #FFA4A4;
+  padding: 4px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+
+.diagrams3 .kihead p{
+  padding-bottom: 5px;
+}
+.diagrams3 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+.diagrams3 .kihead h3 svg {
+  padding-right: 10px;
+}
+
+.diagrams4 .kihead p{
+  padding-bottom: 5px;
+  
+}
+.diagrams4 .kihead h3 {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+
+.diagrams1 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams1 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 80%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams2 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams2 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 40%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams3 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams3 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 60%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams4 .ruang{
+  background-color: #001642;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+}
+.diagrams4 .ruang .isiruang{
+  background-color: #04e6ff;
+  width: 50%;
+  border-radius: 10px;
+  height: 35px;
+}
+
+
+
+
+
+.ubah2{
+    background-color: #E4E4E4;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.ubah3{
+    background-color: #E4E4E4;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.ubah4{
+    background-color: #E4E4E4;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.ubah5{
+    background-color: #E4E4E4;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+/* ini merupakan content table petugas */
+
+.headcontent{
+    background-color: #E4E4E4;
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.diagram1, .diagram2{
+    margin: 20px;
+    background-color: #ffffff;
+    width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0.5px black;
+}
+.diagram1 .kihead p{
+    padding-bottom: 20px;
+}
+.diagram1 .kihead h3 i{
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.diagram1 .kahead{
+    background-color: #90FFA2;
+    padding: 4px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    
+}
+.diagram2 .kihead p{
+    padding-bottom: 20px;
+}
+.diagram2 .kihead h3 {
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.diagram2 .kihead h3 svg {
+    padding-right: 10px;
+}
+.diagram2 .kahead{
+    background-color: #FFA4A4;
+    padding: 4px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    
+}
+.tablepetugas{
+    width: 95%;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0.5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+.tablepetugas table td, th{
+
+    margin: 2%;
+    opacity: 0.8;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.276);
+}
+.tablepetugas table th{
+
+   padding-bottom: 20px; 
+}
+.insert{
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+
+/* insert petugas */
+/* ini merupakan content table pasien */
+/* insert pasien */
+/* ini merupakan content table dokter */
+/* insert Dokter */
+/* ini merupakan content table Ruangan */
+/* insert ruangan */
+
+.profil{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin: 10px 20px 0px 5px;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 15px  black;
+}
+.profil i{
+    margin: 15px;
+    font-size: x-large;
+    
+} 
+.listtable{
+    /* background-color:rgb(255, 255, 255); */
+    flex-direction: column;
+    display: flex;
+  
+    /* height: 85vh; */
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+.profil p{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+
+.table{
+    background-color:  #1dffff;
+    ;
+    border-radius: 10px;
+    margin: 10px 0px 0px 30px;
+    padding-left: 10px;
+    width: 70%;
+    height: 30px;
+    
+}
+.table:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+.table:active{
+    transform: scale(0.9);
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+.nametable p{
+    /* margin-left: 35px; */
+    margin-top: 40px;
+}
+.nametable p i{
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+.nametable a{
+    text-decoration: none;
+    color: black;
+
+}
+.kotakatas h4{
+    margin: 40px 0 0 30px;
+}
+
+.kotakatas{
+    background-color: #1dffff;
+    margin: 0px -15px 0px 0px;
+    border-radius: 0px 0px 30px;
+}
+.diagram{
+    display: flex;
+    margin-top: 50px;
+    /* background-color: antiquewhite; */
+}
+
+.diagram img{
+    width: 100%;
+}
+
+
+/* isi content dibawah sidebar */
+.content1{
+    /* display: flex; */
+    height: 100vh;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.cardkes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+   
+ 
+}
+.cardkes .tooth, .suhu, .plaster, .virus{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    height: 200px;
+    width: 100%;
+    background-color: #1dffff;
+    color: white;
+    border-radius: 5px;
+}
+.cardkes .tooth h1, .suhu h1, .plaster h1, .virus h1{
+    margin-top: -30px;
+}
+.cardkes .tooth button, .suhu button, .plaster button, .virus button{
+    margin-top: 20px;
+    background-color:  #00a7cc00;
+    border: 0.5px solid white;
+    padding: 2px 20px 2px 20px;
+    color: #fdfdfd;
+}
+.cardkes .tooth{
+
+    background-color: #00A8CC;
+}
+.cardkes .suhu{
+    background-color: #0C7B93;
+}
+.cardkes .plaster{
+    background-color: #27496D;
+}
+.cardkes .virus{
+    background-color: #142850;
+}
+
+
+
+
+/* bagian head */
+.head{
+    display: flex;
+}
+.head .image img{
+    width: 70px;
+}
+.kiri{
+ 
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.search form input{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+}
+
+.search form button{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 0px 20px 20px 0px;
+    border-left: none  ;
+    opacity: 3px;
+    background-color: white;
+    margin-left: -4px;
+}
+.search form button:hover{
+    background-color: #6dffff;
+    transition: 2s;
+}
+
+
+.kanan{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+.kanan div i,a{
+    color: black;
+    font-size: 20px;
+}
+.kanan div i:hover{
+color: #008989;
+transition: 0.5s;
+}
+.logout{
+    background-color: rgb(117, 228, 253);
+    width: 35PX;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+    padding: 5PX;
+    align-items: center;
+}
+.logout:hover{
+    background-color: azure;
+    transition: 0.5s;
+    color: rgb(255, 246, 246);
+}
+
+
+
+
+/* content slider */
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+.slides{
+     width: 500%;
+     height: 350px;
+     display: flex;
+}
+.slides input{
+display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: 700px;
+
+}
+/* manual slide */
+.navigation-manual{
+position: absolute;
+width: 70%;
+margin-top: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #00B9B9;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #00B9B9;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* otomatis slide */
+.navigation-auto{
+position: absolute;
+  width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+}
+.navigation-auto div{
+    border: 2px solid rgb(3, 194, 241);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #00B9B9;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #00B9B9;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #00B9B9;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #00B9B9;
+}
+
+
+
+
+
+
+
+
+
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #BEF8F5;
+
+}
+aside{
+
+    background-color: rgb(0, 81, 81);
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    background-color: beige;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.footer_top .fotten, .fotkan{
+    margin-top: 20px;
+}
+.footer_top .fotkir{
+    text-align: center;
+}
+
+.fotter_bottom{
+    border-top: 1px solid rgba(135, 124, 124, 0.574);
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 85%;
+}
+.fotright{
+    display: flex;
+}
+.fotright p{
+    padding-left:20px ;
+    width: 30px;
+}
+.fotright p i, iconify-icon{
+  font-size: 20px;
+}
